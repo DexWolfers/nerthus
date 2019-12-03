@@ -1,0 +1,7 @@
+FROM nerthus/nerthus-baseimage:x86_64-0.0.1
+
+
+# typically, this is mapped to a developer's dev environment
+WORKDIR /opt/gopath/src/gitee.com/nerthus/nerthus
+
+# RUN go run app/cnts/main.go --verbosity=5 --dev console

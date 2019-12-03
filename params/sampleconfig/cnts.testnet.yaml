@@ -1,0 +1,103 @@
+###############################################################################
+#
+#    链配置
+#
+###############################################################################
+chain:
+  chainId: 1907 # 2019-07
+
+###############################################################################
+#
+#    创世配置
+#
+###############################################################################
+genesis:
+  name: "nerthus"
+  accounts: # 创世账户
+  # 初始发行的一百亿 NTS
+  - { address: "nts1puywsrxx4k2awcsn5lsw7kaj446fqv4ju46df4", balance: 9963366400000000000000}
+  # 系统见证人
+  - { address: "nts1wyh2ats9zqd2uuh4pg9ws700hx4eqelrxmdkfp", balance: 2100100000000000000}
+  - { address: "nts17jxh9sq3pp4un8tz2czyrgxtqxdjtkmaq7sds4", balance: 2100100000000000000}
+  - { address: "nts1x9q04v24hxxlw058pry60lttgxm09fgeamfxzy", balance: 2100100000000000000}
+  - { address: "nts1ukw85sf6ys9j20r8ny6vks8fk7cl70cjsnu6ke", balance: 2100100000000000000}
+  - { address: "nts1g46wmnnlstauh45vlkdetcld5y50pj8vz97a5z", balance: 2100100000000000000}
+  - { address: "nts13p9a9rdyk97c2ma9rq6cegcw449hcg3qxa8cmv", balance: 2100100000000000000}
+  - { address: "nts1d69vtxt20rt9k8yue8c8fc07s45v7njm5ga8uw", balance: 2100100000000000000}
+  - { address: "nts1n0r6ky9aetuhnhsusk6cp7dqdpduex7h2vlkk3", balance: 2100100000000000000}
+  - { address: "nts10ejeaq2hl9yq9qxr5yewc8yk5keh57gk3xym6k", balance: 2100100000000000000}
+  - { address: "nts1rxl8mg5h7j0td5x8fkzayfthxw7e6nm7dqj0wj", balance: 2100100000000000000}
+  - { address: "nts1yjc2kdqutl7h6h6nvgc673rftqsgnrxwnk0m5r", balance: 2100100000000000000}
+  # 用户见证人
+  - { address: "nts1zq5u50vp49yaz48ukn9gdmkspjrc9p8czaeemh", balance: 600100000000000000}
+  - { address: "nts1dr0fckgzdudqfktp0zlwnc026e387fpygd4d2v", balance: 600100000000000000}
+  - { address: "nts146yd6lwweuhyj4q88n6gxqy9udjvympmmf0080", balance: 600100000000000000}
+  - { address: "nts1mnau9fsfhxl530kfct2se3zdcglx9q0gjsae2k", balance: 600100000000000000}
+  - { address: "nts1flztrty6a8cgwapg9std4qpewkc0cadht2tms0", balance: 600100000000000000}
+  - { address: "nts1deps27rzqu0mvv5zx8euxzh3gm86tlvjetgu69", balance: 600100000000000000}
+  - { address: "nts1k5mx46w9yf4fpzp3nzsxvnudf58g0laagtvakj", balance: 600100000000000000}
+  - { address: "nts1zlvkyhaqsgg8r60g7725heycuss44s5sgk4fs7", balance: 600100000000000000}
+  - { address: "nts1397r0kh7mm8w6nqta026kudtjwhujdmv25rh5j", balance: 600100000000000000}
+  - { address: "nts13a63waffyu56kwjgmx0f7g4utapgrsdq2xkj7k", balance: 600100000000000000}
+  - { address: "nts1yjxxtegv0yxncuev37d4u6c074jkv4yqherx68", balance: 600100000000000000}
+  - { address: "nts1n05lazslf5p2suesrl5g36prhd762esfdfujkm", balance: 600100000000000000}
+  - { address: "nts12l7g6z9rfwhce4whdrefp2fpps2v8r65d5f4f2", balance: 600100000000000000}
+  - { address: "nts13dcg25skfmqu9quy2p96fajde6jwy8crsp79kw", balance: 600100000000000000}
+  - { address: "nts1c0xvvxk83twseex8kdsq3uj8tlrr3g59hgsf78", balance: 600100000000000000}
+  - { address: "nts1ssaepprjqxuxtcckdktl4cvh27wphq9qes65p2", balance: 600100000000000000}
+  - { address: "nts1qhngj2e8kxcmlznfr3t4jhp7p99jh8dkwee5at", balance: 600100000000000000}
+  - { address: "nts1680z3f2c09ysjj4dxryfrx4andeedg4ue02hxl", balance: 600100000000000000}
+  - { address: "nts13ex5jq598zwd0u6gh2mj874g4e7nwr3jm926rl", balance: 600100000000000000}
+  - { address: "nts1gfdvdt79ejc3p6p0ldg39spa3hjxr60yyt05j0", balance: 600100000000000000}
+  - { address: "nts1jg0e0n0n8lw9glmghgseamthp2zge4smvkhj52", balance: 600100000000000000}
+  - { address: "nts1qpzkr7zqrsqdw8ewf5ygleknh0gse7rh3qxaxs", balance: 600100000000000000}
+  # 理事
+  - { address: "nts1vhuw59pcnw4ymk83w5rq6ygq62ec8jv456zrdv", balance: 110100000000000000}
+  - { address: "nts1j608m590amx43jsr9hh9k4y8d2tlmxpl93stt9", balance: 110100000000000000}
+  - { address: "nts1ptls2jeskwyjzd5fwtfl4q0kzcthh9f7aq6ehu", balance: 110100000000000000}
+
+  systemChain: #系统链
+    witness:
+    #  { address: 地址, keyHex: 公钥 }
+    - { address: "nts1wyh2ats9zqd2uuh4pg9ws700hx4eqelrxmdkfp", keyHex: "0456286777ec0162219a962a5a6d0c912d79b11d11cdd83d1a02c7f264ddb9486303d6a50948d70e1a25e068cc67c0151dc481c637cc7f4635cb6bb1149801340a" }
+    - { address: "nts17jxh9sq3pp4un8tz2czyrgxtqxdjtkmaq7sds4", keyHex: "04c69aa9c16a586c503fd78709582b6ef9a10b77ddca9535a81193ffda5f6da339c4b795bb94f7ab622abcd097ae85c42e3e7aae1864da7aab0b66b1fa686ddc61" }
+    - { address: "nts1x9q04v24hxxlw058pry60lttgxm09fgeamfxzy", keyHex: "04c1ca701c2bac81da936a5b146d12f29c1ff130aa3a435c4a54f5603f1e37b9fcab783caabc864fad755fadfd6fb5eaca2ce8f0102cb4405754cf7b1fc04f14ef" }
+    - { address: "nts1ukw85sf6ys9j20r8ny6vks8fk7cl70cjsnu6ke", keyHex: "045ad41a059b00787f99aa646c1e3d360296c230349035bc78414afbd2c0c2c3fa2642e76cd4321fcd67d739fddd573d9ee908aecb755f7d9ef8b1be0400f966db" }
+    - { address: "nts1g46wmnnlstauh45vlkdetcld5y50pj8vz97a5z", keyHex: "047e6a00b8b14f5634f0ba33673f07d98ccea088a887afc2a625c30b7e908fab5bc3ad2cf7c542fa2709d4a321777466a76a8cbe1bb4caffcaaf6c3685d5cae92f" }
+    - { address: "nts13p9a9rdyk97c2ma9rq6cegcw449hcg3qxa8cmv", keyHex: "04ea9560e20312ba1988f38aef2e7c06ea1386ec91911b1d8cba89f43125789cdba87d1d02023cd6caec1d9f4fc56936f11e500ff9907fda03d3a329a009ec80bb" }
+    - { address: "nts1d69vtxt20rt9k8yue8c8fc07s45v7njm5ga8uw", keyHex: "04a0d83e5cc0d043586576c3afeed71274ad2a9fadb4cb7846b99dcca7143ad0ce386b6dd5589beeddd72d0614bdb7208e2f6b18dacc96ff846c874b1b3ca8ebf4" }
+    - { address: "nts1n0r6ky9aetuhnhsusk6cp7dqdpduex7h2vlkk3", keyHex: "04d2712d4c3141893361a615c6afdb094fa0df824b1043a2f2742bbd26b7c24d47715657733ba794bb1afbfda13244912c48ce746b8912090efbf3b9327ed4a2f4" }
+    - { address: "nts10ejeaq2hl9yq9qxr5yewc8yk5keh57gk3xym6k", keyHex: "048f083711b217313b62cb254b8cf83ed76b2e61d11e934a0eb984f36b230b44fe41c9d87a8713327382f29175d26cc0ee7c83e66f91015fa7987a574938eb1365" }
+    - { address: "nts1rxl8mg5h7j0td5x8fkzayfthxw7e6nm7dqj0wj", keyHex: "047caa90c42b1411e85e2166081861a5333b8399ad092727f928ab289c632f7eb5869b35af552f7b730a1d450d09afc8f3943d3a081db085563bd3e8f2b556c893" }
+    - { address: "nts1yjc2kdqutl7h6h6nvgc673rftqsgnrxwnk0m5r", keyHex: "044467c5d2309c908cffdf97165d10c6f92947671bb48c6a7702af2ec16df81bf9a86be188fda010fc1e9d9714beac006e4174fc93c84082735bc44c7699753ac3" }
+
+  normalChain: #用户链
+    witness:
+    - { address: "nts1zq5u50vp49yaz48ukn9gdmkspjrc9p8czaeemh", keyHex: "04c93f3fa975faa7f24c186f54ed021bf50d0e809aa15e22485fbafe23d06f06de101ec0dace37f32e813ec0e425bea90fc4a443ae4371b8d0a220fc41d2b8e931" }
+    - { address: "nts1dr0fckgzdudqfktp0zlwnc026e387fpygd4d2v", keyHex: "04f757bc6b892797429663944dfc3659c1e95b8fb55fb13705a99ffe68a73ff3908cc9b9de96b0edd9b8931e40b3685d6ea55f388b8e78a56ceaf7b97f0f424b1e" }
+    - { address: "nts146yd6lwweuhyj4q88n6gxqy9udjvympmmf0080", keyHex: "04856595ec1c3a32c235f9c4f3bfafab2388e416d937bd777e4e61d41d2bf04cc663d9d6616b598be6d48f70b69a2e1bc2467f2685f248c03c6be34a0b7dac81c4" }
+    - { address: "nts1mnau9fsfhxl530kfct2se3zdcglx9q0gjsae2k", keyHex: "0479bf62455c6fdf46c896d128c3ed70c8de105e0ec4d277448e79c5552bb3996dc5698bb3626b17597bbff3d2e6756b7415dfc58b3efeeaf5cc9c12114675393b" }
+    - { address: "nts1flztrty6a8cgwapg9std4qpewkc0cadht2tms0", keyHex: "0426cba25e8ee1d927cd6a6702ba142d45e990d8a8819fe4520c84fc72270eb27db14e07fe80e2100c5bf94544b6c835cd42a5af5b419c4826d3120d7951eff998" }
+    - { address: "nts1deps27rzqu0mvv5zx8euxzh3gm86tlvjetgu69", keyHex: "04f4bd654497105bb2cdbffecbdbbe4eac0691c5de42c84e29b069925ee3fa7e5965c277e48331d09fccdff8b72dfd4a004bf43d0fdf7344d6460b1ea2b14987ce" }
+    - { address: "nts1k5mx46w9yf4fpzp3nzsxvnudf58g0laagtvakj", keyHex: "04ef57403fa315621d550e46acbe3da19b46ee79d6b3c12f7d7093359dcd11f31a77efc869ee45faf684f79f419654f96a7d2322db23e6d557fd71eb06b6f1e48e" }
+    - { address: "nts1zlvkyhaqsgg8r60g7725heycuss44s5sgk4fs7", keyHex: "0431d3e220a5a9180f42fddd7cca171c81be4fe1258942914352578908b947d20d418c8bda2774828c6c77cd0b246d0eb2b72732cfc8ae473822f885527ee895a3" }
+    - { address: "nts1397r0kh7mm8w6nqta026kudtjwhujdmv25rh5j", keyHex: "04ba126122038f3846514dc7ce64210adc44d590c31f62836c00b588161c02d22af1151475513105e0e94588237d73b97b51f61f551226999d4b78544284e843ed" }
+    - { address: "nts13a63waffyu56kwjgmx0f7g4utapgrsdq2xkj7k", keyHex: "045db4c4b3f144988d06b301d0708e641641a6b70778aab3dc489b70931459a2cc0d9000de6dad7d42e484418bc902cfb405a287b74d9f2bb67f3c9005bd51e630" }
+    - { address: "nts1yjxxtegv0yxncuev37d4u6c074jkv4yqherx68", keyHex: "04291cabb530376e969d43b4ee59b62d3d17d67a78be65a70d1a9fee04bcda603aca1cbc37903d9b29e35b67519f6aa1d9a72aec6f41e29f833632d7a80db5bc8d" }
+    - { address: "nts1n05lazslf5p2suesrl5g36prhd762esfdfujkm", keyHex: "04bfd014a3f47267e71e2cf5ebad8365f0fee1f6fce40102f2522a54e4f0c793810e6fa427743a9e9403395b0e3b1712d488a26e25e6c95c69986236d7c381e5b7" }
+    - { address: "nts12l7g6z9rfwhce4whdrefp2fpps2v8r65d5f4f2", keyHex: "044b1ded548f86cb5c05dd33eac10e96386ad552e88e5243d4592b05dcb37240ee863a068b712af6d98eb676c226c0c682e740381d826695dfcdd8ea361a258f1c" }
+    - { address: "nts13dcg25skfmqu9quy2p96fajde6jwy8crsp79kw", keyHex: "046036ba7d877ba8e994a06df63640bb6b41412c2ea3f5e560a4b398641169751d217c05aabd76e288d6ba677e1940244625ee52f96fad710ba3baf2e3c2d7d28a" }
+    - { address: "nts1c0xvvxk83twseex8kdsq3uj8tlrr3g59hgsf78", keyHex: "042f8124ea295f4b4bd0b52bfb2b9c0c39591883d15be992ffcb2e4f9f1b70f26d837151fe510d543d011788cd1b473425294593f49e427c56472ac42bf96f7fcc" }
+    - { address: "nts1ssaepprjqxuxtcckdktl4cvh27wphq9qes65p2", keyHex: "044124839d4ceff69dfaf298f02463ccd4ee0ce3c09adf3896c0abc98b9197df734a3d295caf35b0dc379e87ca1a7e2217e005734475481229009035ae835f56a2" }
+    - { address: "nts1qhngj2e8kxcmlznfr3t4jhp7p99jh8dkwee5at", keyHex: "04e068de2a0bfe0d50c3c5f194eb4b5a70815e42e71f5db44d8a08309766a51952a2f4a8e7d3e251bbc9c21b914dee9020640118059b18f0b0a6a620cddb8fbd11" }
+    - { address: "nts1680z3f2c09ysjj4dxryfrx4andeedg4ue02hxl", keyHex: "0464161cc4d6da2644ec7fe6bd62239a02d3e491327be140d7ed2575059303e8ca0bfeb995c8bfa1dc529af391cb3250fcabeba2bccb9b32f2f35a80247c1694a7" }
+    - { address: "nts13ex5jq598zwd0u6gh2mj874g4e7nwr3jm926rl", keyHex: "046f68b3cee6b832317c2674b182f58028c1868e8ac2225ac3199975ba320fc69df1c8d017b9989e41f8488294b3cd06a2c1aeaa122b009b71a202bc29c74b55f4" }
+    - { address: "nts1gfdvdt79ejc3p6p0ldg39spa3hjxr60yyt05j0", keyHex: "04c9b2272c78b7d2bae2abf99d08a4b48ba93a3a215aa527d936d66aa4d23ed99e326a1217361ec783195fcf2cbcaea5b79515bcb6f51f2917d8b697ff343d9094" }
+    - { address: "nts1jg0e0n0n8lw9glmghgseamthp2zge4smvkhj52", keyHex: "04e88d44199183e742eef4cbd0fb9cdede828fe2854a2a88e1182d14bc7f1fd1c90e097fd4e98b9e1037bfd2001ad17626a6ec95590072b4a427b6dc230c2d688f" }
+    - { address: "nts1qpzkr7zqrsqdw8ewf5ygleknh0gse7rh3qxaxs", keyHex: "0481ff0d3d457b2a9819b3944701e2374bdeed6babf216df7733dc2b43e1755881571dfa9639637ce1fc07c1e1839e07659be342ec41b7870a0a9b637cad6344bb" }
+
+  council: #理事信息
+    member: #理事成员
+    - "nts1vhuw59pcnw4ymk83w5rq6ygq62ec8jv456zrdv"
+    - "nts1j608m590amx43jsr9hh9k4y8d2tlmxpl93stt9"
+    - "nts1ptls2jeskwyjzd5fwtfl4q0kzcthh9f7aq6ehu"

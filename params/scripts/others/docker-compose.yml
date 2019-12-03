@@ -1,0 +1,56 @@
+version: '2.1'
+networks: 
+  nerthusnet:
+    external:
+      name: ethereumnet
+  ethereumnet:
+    driver: bridge
+    enable_ipv6: true
+    ipam:
+      driver: default 
+      config:
+      -
+        subnet: 172.16.238.0/24
+      - 
+        subnet: 2001:3984:3989::/64  
+services:
+  cnts-cluster-central:
+    container_name: cnts-central-server
+    image: index.tenxcloud.com/bagheera/ssh
+    environment:
+      - NTS_HTTP_PORT=8920
+      - NTS_BOOT_NODES=enode://ff85755f313aaeff5fc62ae73751224933acf6b32020b6bfb4268b411061e1e8b03c542768b77ba1b71a52958874b4994244d32c765c25872b4aee2ffd026a52@[172.16.238.10]:60101
+      - NTS_PREJS_IDX=5
+      - NTS_NODEKEY=/root/nerthusnodekey 
+      - IP=172.16.238.10
+    command: bash -c "./root/start_node.sh"
+    networks:
+      ethereumnet:
+        ipv4_address: 172.16.238.10
+    volumes:
+      - ./start_central_node.sh:/root/start_node.sh
+      - ./cnts:/root/cnts 
+      - ./nerthusnodekey:/root/nerthusnodekey
+    tty: true
+    stdin_open: true
+  
+  cnts-server:
+    image: index.tenxcloud.com/bagheera/ssh
+    networks:
+      - ethereumnet
+    environment:
+      - NTS_HTTP_PORT=8920
+      - NTS_BOOT_NODES=enode://ff85755f313aaeff5fc62ae73751224933acf6b32020b6bfb4268b411061e1e8b03c542768b77ba1b71a52958874b4994244d32c765c25872b4aee2ffd026a52@[172.16.238.10]:60101
+      - NTS_PREJS_IDX=1
+      - NTS_NODEKEY=/root/nerthusnodekey 
+    depends_on:
+      - cnts-cluster-central
+    links:
+      - cnts-cluster-central
+    command: bash -c "./root/start_node.sh"
+    volumes:
+      - ./start_node.sh:/root/start_node.sh
+      - ./cnts:/root/cnts 
+      - ./nerthusnodekey:/root/nerthusnodekey
+    tty: true
+    stdin_open: true
